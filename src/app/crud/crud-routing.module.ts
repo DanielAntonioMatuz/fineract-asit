@@ -20,9 +20,17 @@ const routes: Routes = [
       path: 'collections',
       children: [
         {
-          path: 'crud',
+          path: 'view',
           data: { title: extract('View data from Crud test'), breadcrumb: 'View data from Crud test', routeParamBreadcrumb: false },
           component: ViewCrudComponent,
+          resolve: {
+            officesData: GetOfficesResolver
+          }
+        },
+        {
+          path: 'create',
+          data: { title: extract('Create data from Crud test'), breadcrumb: 'Create data from Crud test', routeParamBreadcrumb: false },
+          component: CreateComponent,
           resolve: {
             officesData: GetOfficesResolver
           }
