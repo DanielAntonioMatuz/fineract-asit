@@ -42,6 +42,7 @@ import { TasksModule } from './tasks/tasks.module';
 
 /** Main Routing Module */
 import { AppRoutingModule } from './app-routing.module';
+import { ViewCrudComponent } from './crud/View/view-crud/view-crud.component';
 
 /**
  * App Module
@@ -79,7 +80,7 @@ import { AppRoutingModule } from './app-routing.module';
     TasksModule,
     AppRoutingModule,
   ],
-  declarations: [WebAppComponent, NotFoundComponent],
+  declarations: [WebAppComponent, NotFoundComponent, ViewCrudComponent],
   providers: [],
   bootstrap: [WebAppComponent]
 })
