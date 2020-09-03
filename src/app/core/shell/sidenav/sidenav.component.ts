@@ -69,6 +69,10 @@ export class SidenavComponent implements OnInit {
     window.open('https://mifosforge.jira.com/wiki/spaces/docs/pages/52035622/User+Manual', '_blank');
   }
 
+  crudView() {
+    this.router.navigate(['/collections/crud'], { replaceUrl: true });
+  }
+
   /**
    * Opens Keyboard shortcuts dialog.
    */

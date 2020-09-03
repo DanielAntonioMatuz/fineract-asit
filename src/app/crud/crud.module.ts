@@ -4,19 +4,19 @@ import { NgModule } from '@angular/core';
 /** Custom Modules */
 import { SharedModule } from '../shared/shared.module';
 import { PipesModule } from '../pipes/pipes.module';
-import { CollectionsRoutingModule } from './collections-routing.module';
+import { CrudRoutingModule } from './crud-routing.module';
 
 /** Custom Components */
-import { IndividualCollectionSheetComponent } from './individual-collection-sheet/individual-collection-sheet.component';
+import { ViewCrudComponent } from './View/view-crud/view-crud.component';
 
 @NgModule({
   imports: [
     SharedModule,
     PipesModule,
-    CollectionsRoutingModule
+    CrudRoutingModule
   ],
   declarations: [
-    IndividualCollectionSheetComponent
+    ViewCrudComponent
   ]
 })
-export class CollectionsModule { }
+export class CrudModule { }
