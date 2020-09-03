@@ -8,6 +8,7 @@ import { CrudRoutingModule } from './crud-routing.module';
 
 /** Custom Components */
 import { ViewCrudComponent } from './View/view-crud/view-crud.component';
+import { CreateComponent } from './create/create.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { ViewCrudComponent } from './View/view-crud/view-crud.component';
     CrudRoutingModule
   ],
   declarations: [
-    ViewCrudComponent
+    ViewCrudComponent,
+    CreateComponent
   ]
 })
 export class CrudModule { }

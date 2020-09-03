@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 /** Routing Imports */
@@ -9,6 +9,7 @@ import { extract } from '../core/i18n/i18n.service';
 
 /** Custom Components */
 import { ViewCrudComponent } from './View/view-crud/view-crud.component';
+import { CreateComponent } from './create/create.component';
 
 /** Custom Resolvers */
 import { GetOfficesResolver } from '../collections/individual-collection-sheet/get-offices.resolver';
@@ -27,6 +28,10 @@ const routes: Routes = [
           }
         },
       ]
+    },
+    {
+      path: 'create-api',
+      component : CreateComponent,
     }
   ])
 ];
